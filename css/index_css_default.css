@@ -6,48 +6,67 @@ body {
     background-color: whitesmoke;
     font-family: sans-serif;
     margin: 0;
+    height: 100vh;
+    width: 100vw;
     }
-
-header {
-    background-color: rgb(96, 42, 109);
-    margin-top: 0;
-    font-family: "Mukta", "Arial", sans-serif;
-    color: rgb(213, 199, 219); 
-}
 
 .banner {
     display: block;
     text-align: left;
     padding-top: 3%;
-    padding-left: 3%;
-    margin-top: 5%;
+    padding-left: 4%;
     font-family: "Laila", "Times New Roman", sans-serif;
     font-weight: bold;
-    font-size: 5rem;
-    color: rgba(20, 14, 22, 1);
-    background-color: rgba(223, 221, 226, 0.7);
+    font-size: 3rem;
+    color: rgba(20, 14, 22, 0.95);
+    background-color: rgba(255, 202, 213, 0.5);
+    position: relative;
+    top: 75px;
 }
 
 .pozadina {
-    height: 80vh;
-    margin-top: -17%;
+    height: calc(100vh - 60px);
     background-image: url("images/cr_pen3.gif");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
 }
 
-.navigation {
+@media only screen and (max-width: 480px) 
+ { .pozadina {
+    background-image: url("images/cr_pen_vertical.gif");
+ }
+}
+
+#navigation {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(96, 42, 109);
+    font-family: "Mukta", "Arial", sans-serif;
+    color: rgb(213, 199, 219); 
     list-style-type: none;
     text-align: center;
     font-size: 1.4rem;
-    height: 50px;
+    vertical-align: top;
+    padding: 0px;
+    margin: auto;
 }
 
-.navigation li {
+#navigation ul {
+    margin: auto;
+    padding: 0px;
+}
+
+#navigation li {
     display: inline;
-    padding: 5%;
-    vertical-align: middle;
+    padding: 0px 5%;
+}
+
+#navigation li:hover {
+    background-color: rgb(211, 236, 164);
+    color:  rgb(96, 42, 109);
 }
 
 footer {
@@ -57,4 +76,8 @@ footer {
     font-size: 0.8rem;
     text-align: center;
     height: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 20px;
 }
