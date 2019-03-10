@@ -26,10 +26,12 @@ body {
 
 .pozadina {
     height: calc(100vh - 60px);
+    overflow: hidden;
     background-image: url("images/cr_pen3.gif");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
+    margin-top: -10%;
 }
 
 @media only screen and (max-width: 480px) 
@@ -79,5 +81,5 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 20px;
+    height: 50px;
 }
