@@ -19,13 +19,13 @@ body {
     font-weight: bold;
     font-size: 3rem;
     color: rgba(20, 14, 22, 0.95);
-    background-color: rgba(255, 202, 213, 0.5);
+    background-color: rgba(235, 221, 221, 0.3);
     position: relative;
     top: 75px;
 }
 
 .pozadina {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 85px);
     overflow: hidden;
     background-image: url("images/cr_pen3.gif");
     background-size: contain;
@@ -77,9 +77,8 @@ footer {
     color: rgb(116, 151, 120);
     font-size: 0.8rem;
     text-align: center;
-    height: 25px;
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 50px;
+    height: 45px;
 }
