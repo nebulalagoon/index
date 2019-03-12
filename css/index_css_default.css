@@ -47,15 +47,13 @@ body {
     top: 0px;
     width: 100vw;
     height: 40px;
-    background-color: rgb(96, 42, 109);
-    font-family: "Mukta", "Arial", sans-serif;
-    color: rgb(213, 199, 219); 
+    background-color: rgb(96, 42, 109); 
     list-style-type: none;
-    text-align: center;
-    font-size: 1.4rem;
+    text-align: center;  
     vertical-align: top;
     padding: 0px;
-    margin: auto;
+    margin: auto;    
+    font-size: 1.4rem;
 }
 
 #navigation ul {
@@ -65,12 +63,24 @@ body {
 
 #navigation li {
     display: inline;
-    padding: 0px 5%;
+    padding: 0px 4%;
+    font-family: "Mukta", "Arial", sans-serif;
+    color: rgb(213, 199, 219);
 }
 
 #navigation li:hover {
     background-color: rgb(211, 236, 164);
     color:  rgb(96, 42, 109);
+    cursor: pointer;
+}
+
+.langLink {
+    font-size: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 footer {
