@@ -33,13 +33,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
-    margin-top: -8.3%;
-}
-
-@media only screen and (max-width: 480px) 
- { .background {
-    background-image: url("images/cr_pen_vertical.gif");
- }
+    margin-top: -10%;
 }
 
 #navigation {
@@ -93,4 +87,14 @@ footer {
     top: calc(100vh - 45px);
     width: 100vw;
     height: 45px;
+}
+
+@media only screen and (max-width: 480px) 
+ { .background {
+    background-image: url("images/cr_pen_vertical.gif");
+ }
+
+ #navigation {
+     font-size: 1.2rem;
+ }
 }
