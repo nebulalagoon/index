@@ -22,6 +22,7 @@ body {
     background-color: rgba(235, 221, 221, 0.3);
     position: relative;
     top: 15vh;
+    z-index: 5;
 }
 
 .background {
@@ -34,6 +35,7 @@ body {
     background-repeat: no-repeat;
     background-position: center bottom;
     margin-top: -10%;
+    z-index: 0;
 }
 
 #navigation {
@@ -48,6 +50,7 @@ body {
     padding: 0px;
     margin: auto;    
     font-size: 1.4rem;
+    z-index: 10;
 }
 
 #navigation ul {
@@ -87,6 +90,7 @@ footer {
     top: calc(100vh - 45px);
     width: 100vw;
     height: 45px;
+    z-index: 3;
 }
 
 @media only screen and (max-width: 480px) 
