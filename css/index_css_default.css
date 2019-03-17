@@ -1,14 +1,73 @@
 html {
     box-sizing: border-box;
-}
-
-body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
     background-color: whitesmoke;
     font-family: sans-serif;
+    height: 100%;
     margin: 0;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #navigation {
+    position: absolute;
+    top: 0px;
     width: 100vw;
-    }
+    height: 40px;
+    background-color: #602a6d;
+    list-style-type: none;
+    text-align: center;
+    vertical-align: top;
+    padding: 0px;
+    margin: auto;
+    font-size: 1.4rem;
+    z-index: 10;
+  }
+  
+  #navigation ul {
+    margin: auto;
+    padding: 0px;
+  }
+  
+  #navigation li {
+    display: inline;
+    padding: 0px 4%;
+    font-family: "Mukta", "Arial", sans-serif;
+    color: #d5c7db;
+  }
+  
+  #navigation li:hover {
+    background-color: #d3eca4;
+    color: #602a6d;
+    cursor: pointer;
+  }
+  
+  .langLink {
+    font-size: 1rem;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  footer {
+    background-color: #172720;
+    font-family: "Mukta", "Arial", sans-serif;
+    color: #749778;
+    font-size: 0.8rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 45px;
+    z-index: 3;
+    margin-top: auto;
+  }
 
 .banner {
     display: block;
@@ -38,60 +97,7 @@ body {
     z-index: 0;
 }
 
-#navigation {
-    position: absolute;
-    top: 0px;
-    width: 100vw;
-    height: 40px;
-    background-color: rgb(96, 42, 109); 
-    list-style-type: none;
-    text-align: center;  
-    vertical-align: top;
-    padding: 0px;
-    margin: auto;    
-    font-size: 1.4rem;
-    z-index: 10;
-}
-
-#navigation ul {
-    margin: auto;
-    padding: 0px;
-}
-
-#navigation li {
-    display: inline;
-    padding: 0px 4%;
-    font-family: "Mukta", "Arial", sans-serif;
-    color: rgb(213, 199, 219);
-}
-
-#navigation li:hover {
-    background-color: rgb(211, 236, 164);
-    color:  rgb(96, 42, 109);
-    cursor: pointer;
-}
-
-.langLink {
-    font-size: 1rem;
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-footer {
-    background-color: rgb(23, 39, 32);
-    font-family: "Mukta", "Arial", sans-serif;
-    color: rgb(116, 151, 120);
-    font-size: 0.8rem;
-    text-align: center;
-    position: absolute;
-    top: calc(100vh - 45px);
-    width: 100vw;
-    height: 45px;
-    z-index: 3;
-}
+/*mobile portrait*/
 
 @media only screen and (max-width: 480px) 
  { .background {
