@@ -1,0 +1,96 @@
+//reusable template for site themes
+
+body {
+    background-color: $background-color;
+    font-family: sans-serif;
+}
+
+#navigation {
+    background-color: $header-color;
+    font-size: $header-font-size;
+    margin: auto;
+    width: 100vw;
+    height: $header-height;
+    padding: 0px;
+    text-align: center;
+    vertical-align: center;
+    z-index: 5;
+    ul {
+        margin: auto;
+        padding: 0px;
+    }
+
+    li {
+        display: inline;
+        padding: 0px 3%;
+        font-family: $font-stack;
+        color: $header-text-color;
+    }
+
+    li:hover {
+        background-color: $highlight-color;
+        color: $header-color;
+        cursor: pointer;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.langLink {
+    font-size: 0.95rem;
+}
+
+footer {
+    background-color: $footer-color;
+    font-family: $font-stack;
+    color: $footer-text-color;
+    font-size: $footer-font-size;
+    text-align: center;
+    width: 100vw;
+    height: $footer-height;
+    z-index: 3;
+}
+
+.banner {
+    display: block;
+    text-align: $banner-text-align;
+    font-size: $banner-text-size;
+    font-family: $banner-font-stack;
+    font-weight: bold;
+    background-color: $banner-color;
+    color: $banner-text-color;
+    padding-top: 3%;
+    padding-left: 4%;
+    z-index: 5;
+    position: relative;
+    top: 15vh;
+}
+
+.background {
+    background-image: $image-url-landscape;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 80vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/*mobile portrait*/
+
+@media only screen and (max-width: 480px) 
+ { .background {
+    background-image: $image-url-portrait;
+ }
+
+ #navigation {
+    font-size: calc($header-font-size - 0.2);
+ }
+
+ footer {
+     font-size: calc($footer-font-size - 0.1);
+ }
+}

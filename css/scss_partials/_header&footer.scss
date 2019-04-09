@@ -1,0 +1,23 @@
+//scss partial for header (#navigation) and footer positioning - top and bottom of page respectively
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#navigation {
+    position: absolute;
+    top: 0px;
+}
+
+footer {
+    margin-top: auto;
+}
